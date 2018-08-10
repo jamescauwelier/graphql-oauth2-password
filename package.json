@@ -1,0 +1,60 @@
+{
+  "name": "graphql-oauth2-password",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": "git@github.com:jamescauwelier/graphql-oauth2-password.git",
+  "author": "James Cauwelier <james@happinessinabit.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build:dev": "webpack --mode development --config ./webpack.config.js",
+    "build:prod": "webpack --mode production --config ./webpack.config.js"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-hot-loader": "^4.3.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.3.0",
+    "eslint-plugin-react": "^7.10.0",
+    "file-loader": "^1.1.11",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "semi": 2,
+      "strict": 0
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "globals": {
+      "module": true,
+      "require": true
+    }
+  }
+}
