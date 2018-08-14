@@ -1,13 +1,17 @@
-import React, { Component} from "react";
-import {hot} from "react-hot-loader";
-import "./App.css";
 
-class App extends Component{
+// external imports
+import React from "react";
+import { hot } from 'react-hot-loader';
+
+// internal imports
+
+import "./App.css";
+import Browser from './UI/Browser';
+
+class App extends React.Component {
   render(){
-    return(
-      <div className="App">
-        <h1> Hello, Madame! </h1>
-      </div>
+    return (
+      <Browser />
     );
   }
 }
